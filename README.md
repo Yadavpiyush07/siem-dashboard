@@ -112,30 +112,12 @@ INSTALLATION & SETUP
 
 Cybersecurity-Projects/PROJECTS/intermediate/siem-dashboard
 
-3. Create a file named:
-
-.env
-
-4. Paste the following inside the .env file:
-
-MONGO_DB=siem_dashboard
-MONGO_URI=mongodb://mongo:27017/siem_dashboard
-
-REDIS_URL=redis://default:redispassword@redis:6379/0
-REDIS_PASSWORD=redispassword
-
-SECRET_KEY=supersecretkey
-JWT_SECRET_KEY=jwtsecretkey
-
-FLASK_ENV=development
-FLASK_DEBUG=1
-
-5. Start Docker Desktop and wait until Docker Engine is running.
+3. Start Docker Desktop and wait until Docker Engine is running.
 
 Download Docker Desktop:
 https://www.docker.com/products/docker-desktop/
 
-6. Open CMD/Terminal inside the siem-dashboard folder and run:
+4. Open CMD/Terminal inside the siem-dashboard folder and run:
 
 docker compose -f compose.yml up --build
 
